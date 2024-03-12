@@ -3,9 +3,47 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+### 1. [Tipe Data primitif]
+Tipe data primitif adalah tipe data yang telah ditentukan oleh sistem. Banyak bahasa pemrograman dapat menyediakan tipe data primitif, 
+tetapi mereka berbeda karena jumlah bit yang dialokasikan untuk setiap bit bergantung pada kompiler, bahasa pemrograman, dan sistem operasinya.
+Contoh tipe data primitif:
 
-## Guided 
+1. integer (Bilangan Bulat)
+Tipe data ini digunakan untuk menyimpan bilangan bulat seperti 2,4,dll. Bagian ini menerima byte, short, int, dan long 
+sebagai tipe data yang disignifikasi, yang memungkinkan nilai positif dan negatif. 
+Namun, Java tidak mendukung tipe data yang tidak disignifikasi, yang hanya dapat menampilkan nilai positif. 
+2. Float (Bilangan Desimal)
+Tipe data float digunakan untuk mempresentasikan nilai yang memiliki pecahan atau angka decimal di belakang koma,
+seperti 2.4, 3.14, dan sebagainya. Bilangan semacam ini disebut bilangan riil.
+3. Char (Karakter)
+Merupakan tipe data yang menggunakan sebuah karakter misalnya sebuah huruf. Biasanya digunakan untuk simbol A, B, C, D dan seterusnya.
+4. Boolean (Nilai Logika)
+Tipe data Boolean yaitu nilai yang terdiri dari dua kemungkinan (benar atau salah), dapat disimpan dalam tipe data boolean. 
+Kata kunci Boolean menunjukkan tipe data ini. Kata kunci "benar" digunakan untuk menunjukkan nilai benar, 
+sedangkan kata kunci "salah" digunakan untuk menunjukkan nilai salah.
+
+### 2. [Tipe Data Abstrak]
+Programer menciptakan tipe data abstrak, juga dikenal sebagai tipe data abstrak (ADT). 
+Tipe data abstrak dapat berisi lebih dari satu tipe data, sehingga nilainya dapat beragam. 
+Pada bahasa C++, fitur Class adalah fitur program berorientasi objek (OOP), yang mirip dengan fitur data struktur pada bahasa C. 
+Kedua berfungsi untuk membungkus tipe data sebagai anggota di dalamnya. Menurut learn.microsoft.com, 
+perbedaan antara Struct dan Class terletak pada cara mereka diakses secara default: Struct bersifat publik sedangkan Class bersifat privat.
+
+### 3. [Tipe Data Koleksi]
+Adalah Tipe data koleksi adalah jenis data yang digunakan untuk mengelompokkan dan menyimpan sejumlah nilai atau objek secara bersamaan. 
+Mereka memungkinkan penyimpanan, pengelolaan, dan akses ke sejumlah besar data yang terstruktur. 
+Dalam pemrograman, ada beberapa jenis data koleksi yang umum digunakan, dan di antaranya adalah:
+a. Array
+Koleksi statis yang hanya dapat mengelompokkan tipe data yang sama dan memiliki ukuran yang tetap.
+Indeks memungkinkan akses ke elemen-elemen tersebut. Array memiliki ukuran tetap yang ditetapkan saat deklarasi.
+b. Vector
+Vector seperti array, memiliki kemampuan untuk menyimpan data dalam bentuk elemen yang alokasi memorinya dilakukan secara otomatis dan bersebelahan. 
+Pada C/C++, vector juga memiliki fitur pelengkap seperti akses elemen, iterator, kapasitas, dan modifikasi.
+c. Map
+koleksi dinamis yang dapat disesuaikan ukurannya dan memiliki kemampuan untuk mengelompokkan berbagai tipe data dengan menggunakan pasangan <key, value>. 
+Pada std::map digunakan Self-Balancing Tree khususnya Red-Black Tree.
+
+## Guided
 
 ### 1. [Tipe Data primitif]
 
@@ -103,7 +141,10 @@ int main(){
     return 0;
 }
 ```
-Pada codingan diatas 
+Pada codingan diatas menggunakan struct untuk mencetak isinya. Struct adalah salah satu tipe data abstrak.
+Pada kode diatas mendefinisikan struct mahasiswa yang memiliki tiga anggota yaitu : 'name' array karakter dengan panjang maksimum 50,
+'addres' array dengan panjang maksimum karakter 100, dan 'age' variabel yang bertipe integer. 
+Kemudian program akan mencetak informasi dari dua mahasiswa sesuai dengan nilai yang telah diinisialisasi.
 
 ## Guided 
 
@@ -132,7 +173,10 @@ int main() {
 return 0;
 }
 ```
-Pada kode diatas digunakan
+Pada kode diatas digunakan untuk mencetak isi dari sebuah array. Array digunakan untuk menyimpan sekumpulan nilai yang memiliki tipe yang sama.
+Pada program diatas, sebuah array dengan ukuran 5 elemen dideklarasikan dan diinisialisasi dengan nilai 23, 50, 34, 78, dan 90.
+Kemudia setiap elemen array dicetak, makan akan menampilkan indeks array serta nilainya.
+
 
 ## Unguided 
 
@@ -141,11 +185,32 @@ jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!]
 
 ```C++
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
-int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+float hitungLuasPersegi_134(int sisi_134){
+    return sisi_134*sisi_134;
+}
+
+float hitungVolumeKubus_134(int sisi_134){
+    return sisi_134*sisi_134*sisi_134;
+}
+
+int main(){
+    //Mendefenisikan variabel dengan menggunakan tipe data int
+    int panjangSisi;
+
+    cout << "Masukkan panjang sisi persegi :";
+    cin >> panjangSisi;
+
+    float luasPersegi = hitungLuasPersegi_134(panjangSisi);
+    cout << "luas persegi dengan sisi " << panjangSisi << "adalah :" << luasPersegi << endl;
+    float volumeKubus = hitungVolumeKubus_134(panjangSisi);
+    cout << "Volume kubus dengan sisi " << panjangSisi << "adalah :" << volumeKubus << endl;
+
     return 0;
+
 }
 ```
 #### Output:
@@ -194,3 +259,4 @@ Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran
 
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[2] Fajri, D. (n.d.). LAPORAN PRAKTIKUM 1 ALGORITMA STRUKTUR DATA-TIPE DATA PRIMITIF, TIPE DATA ABSTRAK, DAN TIPE DATA KOLEKSI. Www.academia.edu. Retrieved March 12, 2024, from https://www.academia.edu/31473936/LAPORAN_PRAKTIKUM_1_ALGORITMA_STRUKTUR_DATA_TIPE_DATA_PRIMITIF_TIPE_DATA_ABSTRAK_DAN_TIPE_DATA_KOLEKSI
