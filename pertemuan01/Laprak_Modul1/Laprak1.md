@@ -210,31 +210,94 @@ int main(){
     cout << "Volume kubus dengan sisi " << panjangSisi << "adalah :" << volumeKubus << endl;
 
     return 0;
-
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![Screenshot output_unguided1](output_unguided1.png)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Pada codingan diatas, merupakan program sederhana untuk menghitung luas persegi dan volume kubus berdasarkan panjang sisi yang dimasukkan oleh pengguna.
+Variabel 'int' digunakan untuk menyimpang panjang sisi persegi atau kubus. Kemudian nilai yang dimasukkan pengguna akan disimpan. 
+Program akan menampilkan atau mencetak hasil luas persegi dan volume kubus di layar. Lalu program akan mengembalikan nilai 0.
 
 ## Unguided 
 
 ### 2. [Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya]
 
 ```C++
+// 
 #include <iostream>
+#include <string>
+
 using namespace std;
 
-int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+// Struct untuk menyimpan informasi mahasiswa
+struct Mahasiswa {
+    string nama_134;
+    int nim_134;
+
+    // Member function untuk menampilkan informasi mahasiswa
+    void display() {
+        cout << "Mahasiswa:" << endl;
+        cout << "Nama: " << nama_134 << endl;
+        cout << "NIM: " << nim_134 << endl;
+    }
+};
+
+// Class untuk merepresentasikan sebuah buku
+class Buku {
+private:
+    string judul_134;
+    string penulis_134;
+    int tahunTerbit_134;
+
+public:
+    // Constructor untuk menginisialisasi objek Buku
+    Buku(string jdl, string pen, int tahun) : judul_134(jdl), penulis_134(pen), tahunTerbit_134(tahun) {}
+
+    // Metode untuk menampilkan informasi buku
+    void display() {
+        cout << "\nInformasi Buku:" << endl;
+        cout << "Judul: " << judul_134 << endl;
+        cout << "Penulis: " << penulis_134 << ", Tahun Terbit: " << tahunTerbit_134 << endl;
+    }
+};
+
+int main(){
+    // Membuat objek Mahasiswa
+    Mahasiswa mahasiswa;
+    mahasiswa.nama_134 = "Najwa Humairah";
+    mahasiswa.nim_134 = 11102134;
+
+    // Memanggil member function untuk menampilkan informasi mahasiswa
+    mahasiswa.display();
+
+    // Membuat objek Buku
+    Buku buku("Pemrograman C++", "John kelvin", 2022);
+
+    // Memanggil member function untuk menampilkan informasi buku
+    buku.display();
+
     return 0;
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![Screenshot output_unguided2](output_unguided2.png)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program diatas menggunakan strutur(struct) dan kelas(class) untuk merepresentasikan informasi mahasiswa dan buku. Struct digunakan untuk menyimpan informasi tentang seorang mahasiswa seperti nama dan NIM.
+Dalam struktur mahasiswa, ada juga metode (fungsi anggota) display() yang menampilkan informasi siswa di layar. Metode ini menampilkan nama dan NIM siswa di layar. Class memiliki tiga data yaitu judul_134, penulis_134, dan tahunTerbit_134, semuanya bertipe string atau integer.
+Class Buku juga memiliki metode display() yang memungkinkan informasi buku ditampilkan di layar. Program kemudian mengembalikan nilai 0, menandakan bahwa program berakhir dengan sukses.
+
+Penjelasan Class dan Struct
+A. Class
+Dalam pemrograman berorientasi objek (OOP) pada bahasa pemrograman C++, class adalah kumpulan objek dengan karakter yang sama. 
+Dengan menggunakan class, Anda dapat membuat tipe data baru yang dapat digunakan untuk membuat objek. Sifat (atribut), kelakuan (operasi/metode), 
+hubungan (hubungan), dan arti adalah ciri-ciri kelas [3]. Class digunakan untuk memasukkan tipe data sebagai anggota, seperti yang dilakukan oleh struct.
+
+B. Struct
+Struktur, juga dikenal sebagai struktur, adalah tipe data yang memungkinkan program untuk mengelompokkan berbagai jenis data yang berbeda menjadi satu kesatuan yang lebih besar. 
+Struktur terdiri dari lebih dari satu variabel, masing-masing dapat mengandung jenis data yang sama atau berbeda. Struktur dalam C++ adalah tipe data yang didefinisikan oleh pengguna
+(tipe data yang didefinisikan oleh pengguna). Struktur ini bermanfaat untuk mengelompokkan data dengan berbagai tipe data menjadi satu unit. untuk menyimpan dan mengakses data dengan cara yang terstruktur. 
+Dengan mengakses atribut atau anggota struct secara individual, data dapat dikelola dan diubah dengan mudah dengan struct.
 
 ## Unguided 
 
@@ -242,21 +305,45 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 
 ```C++
 #include <iostream>
+#include <map>
+#include <string>
+
 using namespace std;
 
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+    // Map digunakan untuk menyimpan informasi umur mahasiswa berdasarkan nama
+    map<string, int> umurMahasiswa_134;
+
+    // Menambahkan data umur mahasiswa ke dalam map
+    umurMahasiswa_134["Vanetha Smith"] = 20;
+    umurMahasiswa_134["Clarista Valeska"] = 21;
+    umurMahasiswa_134["zharifa Wulan"] = 19;
+
+    // Menampilkan informasi umur mahasiswa
+    cout << "Informasi Umur Mahasiswa" << endl;
+    for (const auto& pair : umurMahasiswa_134) {
+        cout << "Nama: " << pair.first << ", Umur: " << pair.second << " tahun" << endl;
+    }
+
+    // Mengakses umur mahasiswa dengan nama tertentu
+    string namaMahasiswa_134 = "Clarista Valeska";
+    cout << "Umur Mahasiswa " << namaMahasiswa_134 << ": " << umurMahasiswa_134[namaMahasiswa_134] << " tahun" << endl;
+
     return 0;
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![Screenshot output_unguided3](output_unguided3.png)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Pada codingan diatas menggunakan struktur data map dalam bahasa pemograman c++. Map digunakan untuk memetakan (mapping) kunci (key) ke nilai (value) yang terkait. Pada kasus diatas, program menyimpan informasi umur mahasiswa berdasarkan nama menggunakan map<string,int>.
+Deklarasi dan inisialisasi map, map akan menyimpan informasi umur mahasiswa berdasarkan nama.
+kemudian data ditambahkan kedalam map. Program mengakses umur mahasiswa berdasarkan nama yang diberikan. Kemudian program akan mengembalikan nilai 0.
+Jadi program ini memiliki fungsi untuk menyimpan,menampilkan, dan mengakses informasi dan menggunakan struktur data map dalam bahasa c++.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Programen harus memahami dan menguasai tipe data c++ dengan baik.Ketika Anda membuat variabel, tipe data harus ada agar variabel memiliki nilai yang jelas dan spesifik ketika digunakan. 
+Terdapat tiga kategori tipe data: tipe data primitif atau tipe data dasar, yang mencakup integer, char, float, dan boolen; tipe data abstrak atau tipe data yang dapat dibentuk sendiri, 
+yang mencakup struct dan class; dan tipe data koleksi atau tipe data yang digunakan untuk pengelompokan, yang mencakup array, map, dan vector. Agar program yang dibuat dapat berjalan dengan benar, efisien, dan terhindar dari kesalahan (error).
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
-[2] Fajri, D. (n.d.). LAPORAN PRAKTIKUM 1 ALGORITMA STRUKTUR DATA-TIPE DATA PRIMITIF, TIPE DATA ABSTRAK, DAN TIPE DATA KOLEKSI. Www.academia.edu. Retrieved March 12, 2024, from https://www.academia.edu/31473936/LAPORAN_PRAKTIKUM_1_ALGORITMA_STRUKTUR_DATA_TIPE_DATA_PRIMITIF_TIPE_DATA_ABSTRAK_DAN_TIPE_DATA_KOLEKSI
+[1] Fajri, D. (n.d.). LAPORAN PRAKTIKUM 1 ALGORITMA STRUKTUR DATA-TIPE DATA PRIMITIF, TIPE DATA ABSTRAK, DAN TIPE DATA KOLEKSI. Www.academia.edu. Retrieved March 12, 2024, from https://www.academia.edu/31473936/LAPORAN_PRAKTIKUM_1_ALGORITMA_STRUKTUR_DATA_TIPE_DATA_PRIMITIF_TIPE_DATA_ABSTRAK_DAN_TIPE_DATA_KOLEKSI
