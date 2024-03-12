@@ -10,6 +10,7 @@ int main() {
     nilai[2] = 34;
     nilai[3] = 78;
     nilai[4] = 90;
+    
     // Mencetak array dengan tab
     cout << "Isi array pertama : " << nilai[0] << endl;
     cout << "Isi array kedua : " << nilai[1] << endl;

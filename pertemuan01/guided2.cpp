@@ -19,6 +19,7 @@ int main(){
     strcpy(mhs2.name, "Bambang");
     strcpy(mhs2.address, "Surabaya");
     mhs2.age = 23;
+    
     // mencetak isi struct
     printf("## Mahasiswa 1 ##\n");
     printf("Nama: %s\n", mhs1.name);
