@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul Tipe Data</h1>
-<p align="center">Arvinanto Bahtiar</p>
+<p align="center"> Najwa Humairah_2311102134 </p>
 
 ## Dasar Teori
 
@@ -287,7 +287,7 @@ Program diatas menggunakan strutur(struct) dan kelas(class) untuk merepresentasi
 Dalam struktur mahasiswa, ada juga metode (fungsi anggota) display() yang menampilkan informasi siswa di layar. Metode ini menampilkan nama dan NIM siswa di layar. Class memiliki tiga data yaitu judul_134, penulis_134, dan tahunTerbit_134, semuanya bertipe string atau integer.
 Class Buku juga memiliki metode display() yang memungkinkan informasi buku ditampilkan di layar. Program kemudian mengembalikan nilai 0, menandakan bahwa program berakhir dengan sukses.
 
-Penjelasan Class dan Struct
+##Penjelasan Class dan Struct
 A. Class
 Dalam pemrograman berorientasi objek (OOP) pada bahasa pemrograman C++, class adalah kumpulan objek dengan karakter yang sama. 
 Dengan menggunakan class, Anda dapat membuat tipe data baru yang dapat digunakan untuk membuat objek. Sifat (atribut), kelakuan (operasi/metode), 
