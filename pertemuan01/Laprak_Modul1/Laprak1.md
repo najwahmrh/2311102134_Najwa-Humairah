@@ -303,17 +303,17 @@ int main() {
 Pada codingan diatas menggunakan struktur data map dalam bahasa pemograman c++. Map digunakan untuk memetakan (mapping) kunci (key) ke nilai (value) yang terkait. Pada kasus diatas, program menyimpan informasi umur mahasiswa berdasarkan nama menggunakan map<string,int>. Deklarasi dan inisialisasi map, map akan menyimpan informasi umur mahasiswa berdasarkan nama. kemudian data ditambahkan kedalam map. Program mengakses umur mahasiswa berdasarkan nama yang diberikan. Kemudian program akan mengembalikan nilai 0. Jadi program ini memiliki fungsi untuk menyimpan,menampilkan, dan mengakses informasi dan menggunakan struktur data map dalam bahasa c++.
 
 Perbedaan array dengan map:<br/>
-1.Array<br/>
--Struktur data linear yang terdiri dari kumpulan elemen yang memiliki tipe data yang sama yang diindeks oleh bilangan bulat disebut array.
--Element array disimpan dalam lokasi memori yang dekat satu sama lain.
--Array dimulai dari indeks o.
--Selama kompilasi, ukuran array tidak boleh diubah.
--Array merupakan struktur data linear yang menyimpan elemen dalam urutan yang terdefenisi dengan indeks integer.
-2.Map<br/>
--Maps adalah struktur data yang memetakan kunci ke nilai(key-value pairs).
--Map biasanya menggunakan struktur data seperti pohon pencarian biner atau tabel hash, yang memungkinkan pencarian, penyisipan, dan penghapusan dalam waktu konstan atau logaritmik.
--Saat program berjalan ukuran map bisa berubah.
--Map merupakan struktur data yang memetakan kunci ke nilai dan mengakses cepat ke nilai berdasarkan kunci.
+1. Array :<br/>
+    - Struktur data linear yang terdiri dari kumpulan elemen yang memiliki tipe data yang sama yang diindeks oleh bilangan bulat disebut array.
+    - Element array disimpan dalam lokasi memori yang dekat satu sama lain.
+    - Array dimulai dari indeks o.
+    - Selama kompilasi, ukuran array tidak boleh diubah.
+    - Array merupakan struktur data linear yang menyimpan elemen dalam urutan yang terdefenisi dengan indeks integer.
+2. Map :<br/>
+    - Maps adalah struktur data yang memetakan kunci ke nilai(key-value pairs).
+    - Map biasanya menggunakan struktur data seperti pohon pencarian biner atau tabel hash, yang memungkinkan pencarian, penyisipan, dan penghapusan dalam waktu konstan atau logaritmik.
+    - Saat program berjalan ukuran map bisa berubah.
+    - Map merupakan struktur data yang memetakan kunci ke nilai dan mengakses cepat ke nilai berdasarkan kunci.
 
 ## Kesimpulan
 Programen harus memahami dan menguasai tipe data c++ dengan baik.Ketika Anda membuat variabel, tipe data harus ada agar variabel memiliki nilai yang jelas dan spesifik ketika digunakan. Terdapat tiga kategori tipe data: tipe data primitif atau tipe data dasar, yang mencakup integer, char, float, dan boolen; tipe data abstrak atau tipe data yang dapat dibentuk sendiri, yang mencakup struct dan class; dan tipe data koleksi atau tipe data yang digunakan untuk pengelompokan, yang mencakup array, map, dan vector. Agar program yang dibuat dapat berjalan dengan benar, efisien, dan terhindar dari kesalahan (error).
