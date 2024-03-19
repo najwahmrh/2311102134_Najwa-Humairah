@@ -161,7 +161,7 @@ int main()
 }
 ```
 #### Output:
-![Screenshot_unguided1.png](Screenshot_unguided1)
+![Screenshot_unguided1.png](Screenshot_unguided1.png)
 
 Program diatas digunakan untuk memisahkan angka genap dan angka ganjil dari array yang telah diinputkan oleh pengguna. Program meminta pengguna untuk memasukkan data array. Kemudian program akan memisahkan angka genap dan ganjil menggunakan loop. Program menyimpan setiap angka genap atau ganjil dalam array. Lalu program akan menampilkan angka genap dan ganjil yang telah dipisahkan.
 
@@ -228,8 +228,8 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot(1)_unguided2.png](Screenshot(1)_unguided2)
-![Screenshot(2)_unguided2.png](Screenshot(2)_unguided2)
+![Screenshot(1)_unguided2.png](Screenshot(1)_unguided2.png)
+![Screenshot(2)_unguided2.png](Screenshot(2)_unguided2.png)
 
 Pada codingan diatas memasukkan nilai-nilai ke dalam array tiga dimensi dan menampilkannya dalam bentuk matriks. Program meminta pengguna untuk memasukkan ukuran elemen array tiga dimensi. Kemudian, program akan menginisialisasi array tiga dimensi dengan ukuran yang telah dimasukkan. Setelah semua nilai dimasukkan program akan mencetak nilai-nilai elemen array sesuai dengan indeksnya. Lalu program akan mencetak nilai-nilai elemen array dalam bentuk matriks untuk tampilan yang lebih terstruktur.
 
@@ -319,8 +319,8 @@ int main(){
 }
 ```
 #### Output:
-![Screenshot(3)_unguided3.png](Screenshot(3)_unguided3)
-![Screenshot(4)_unguided4.png](Screenshot(4)_unguided3)
+![Screenshot(3)_unguided3.png](Screenshot(3)_unguided3.png)
+![Screenshot(4)_unguided4.png](Screenshot(4)_unguided3.png)
 
 Kodingan diatas menampilkan menu pilihan untuk mencari nilai maksimum, minimum, atau rata-rata dari elemen tersebut. Program akan meminta pengguna untuk memasukkan jumlah elemen array dan nilai-nilai elemen array. Kemudian program akan menampilkan pilihan menu. Setelah pengguna memilih menu, program akan melakukan perhitungan sesuai dengan pilihan yang dibuat dan menampilkan hasilnya.
 
