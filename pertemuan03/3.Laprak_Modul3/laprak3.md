@@ -9,18 +9,18 @@ Linked list adalah struktur data yang paling dasar, terdiri dari sejumlah unsur 
 ### 1. [Single linked list]
 Single Linked list adalah Daftar terhubung yang setiap simpul pembentuknya mempunyai satu rantai(link) ke simpul lainnya. Pembentukan linked list tunggal memerlukan :
 
-    1. deklarasi tipe simpul
-    2. deklarasi variabel pointer penunjuk awal Linked list
-    3. pembentukan simpul baru
-    4. pengaitan simpul baru ke Linked list yang telah terbentuk
+1. deklarasi tipe simpul
+2. deklarasi variabel pointer penunjuk awal Linked list
+3. pembentukan simpul baru
+4. pengaitan simpul baru ke Linked list yang telah terbentuk
 
 Alamat elemen adalah pointer. Setiap simpul terdiri dari dua bagian: yang pertama disebut bagian isi, informasi, atau data, dan yang kedua disebut bagian pointer, yang berisi alamat dari node berikutnya atau sebelumnya. Elemen awal daftar disebut head dan elemen terakhir disebut tail. Dengan struktur seperti ini, linked list dibentuk dengan menunjuk pointer next elemen ke elemen yang mengikutinya. Pointer next pada elemen terakhir merupakan NULL, yang menunjukkan akhir daftar. Operasi Single Linked List biasanya mencakup penambahan dan penghapusan simpul pada awal atau akhir daftar serta pencarian dan pengambilan nilai pada simpul tertentu. Single Linked List umumnya lebih efisien dalam penggunaan memori karena struktur datanya hanya memerlukan satu pointer untuk setiap simpul. Ini dibandingkan dengan jenis Linked List lainnya, seperti Double Linked List dan Circular Linked List. Ciri circular linked list berbeda dari single linked list karena penunjuk berikutnya pada node terakhir circular linked list selalu merujuk ke node pertama.
 
 ### 2. [Double linked list]
 Penggunaan Double Linked List hampir sama dengan penggunaan Single Linked List yang telah kita pelajari sebelumnya. Yang berbeda adalah bahwa Double Linked List menggunakan pointer baru, prev, yang dapat digunakan untuk menggeser mundur sementara tetap mempertahankan pointer next. Double Linked List memiliki tiga elemen penting untuk setiap simpul: elemen data (biasanya nilai), pointer next yang menunjuk ke simpul berikutnya, dan pointer prev yang menunjuk ke simpul sebelumnya. Dengan adanya pointer prev, Double Linked List memungkinkan operasi penghapusan dan penambahan pada simpul mana saja secara efisien.
 
-    a. Double Linked List lebih fleksibel daripada Single Linked List karena memiliki dua pointer penunjuk (next dan prev), tetapi memerlukan memori tambahan.
-    b. Ada 2 jenis Double Linked List, yaitu: Double Linked List Non Circular dan Double Linked List Circular. DLLNC adalah sebuah Linked List yang terdiri dari dua arah pointer, dengan node yang saling terhubung, namun kedua pointernya menunjuk ke NULL.
+a. Double Linked List lebih fleksibel daripada Single Linked List karena memiliki dua pointer penunjuk (next dan prev), tetapi memerlukan memori tambahan.
+b. Ada 2 jenis Double Linked List, yaitu: Double Linked List Non Circular dan Double Linked List Circular. DLLNC adalah sebuah Linked List yang terdiri dari dua arah pointer, dengan node yang saling terhubung, namun kedua pointernya menunjuk ke NULL.
 
 Keuntungan dari Double Linked List adalah memungkinkan operasi penambahan dan penghapusan pada simpul mana pun dengan efisien, yang membuatnya sangat berguna untuk menjalankan beberapa algoritma yang membutuhkan operasi ini. Selain itu, melakukan traversal list dari depan ke belakang dengan mudah dengan Double Linked List. Karena setiap simpul membutuhkan satu pointer tambahan, Double Linked List membutuhkan lebih banyak memori daripada Single Linked List. Selain itu, operasi penambahan dan penghapusan pada Double Linked List membutuhkan waktu yang lebih lama daripada pada Single Linked List.
 
