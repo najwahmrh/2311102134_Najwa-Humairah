@@ -330,6 +330,8 @@ Programen harus memahami dan menguasai array.
     - Untuk menggunakan array multidimensi, Anda perlu memahami pengindeksan, alokasi memori, dan pengolahan data dalam konteks dimensi yang lebih besar.
     - Dalam pemrograman, memahami array multidimensi sangat penting, terutama dalam pengolahan data yang kompleks seperti pengolahan gambar, simulasi fisika, atau pemodelan matematika.
     - Struktur tambahan yang diberikan oleh masing-masing dimensi array memungkinkan penyimpanan dan akses data yang lebih kompleks.
+
 ## Referensi
 [1] Pemograman Dasar, Modul Praktikum. Array (Larik). 2020.
+
 [2] Kaswidjanti, Wilis, et al. Algoritma Dan Pemrograman Lanjut Pertemuan Ke-2 Array (Larik). 2022.

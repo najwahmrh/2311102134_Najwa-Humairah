@@ -320,4 +320,5 @@ Programen harus memahami dan menguasai tipe data c++ dengan baik.Ketika Anda mem
 
 ## Referensi
 [1] Fajri, D. (n.d.). LAPORAN PRAKTIKUM 1 ALGORITMA STRUKTUR DATA-TIPE DATA PRIMITIF, TIPE DATA ABSTRAK, DAN TIPE DATA KOLEKSI. Www.academia.edu. Retrieved March 12, 2024, from https://www.academia.edu/31473936/LAPORAN_PRAKTIKUM_1_ALGORITMA_STRUKTUR_DATA_TIPE_DATA_PRIMITIF_TIPE_DATA_ABSTRAK_DAN_TIPE_DATA_KOLEKSI
+
 [2] Hermawan T. “Buku Ajar Panduan Praktikum STRUKTUR DATA.” Text-Id.123dok.com, 2014, text-id.123dok.com/document/zkxv02ey-buku-ajar-panduan-praktikum-struktur-data.html. Accessed 12 Mar. 2024.
