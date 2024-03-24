@@ -444,5 +444,4 @@ Programen harus memahami dan menguasai single dan double linked list.
 
 ## Referensi
 [1] ST,M.KOm, Triase. STRUKTUR DATA. 2020.
-
 [2] M.TI, Anita Sindar RMS, ST. STRUKTUR DATA DAN ALGORITMA DENGAN C++. Google Books, CV. AA. RIZKY, 28 Nov. 2019, books.google.com/books?hl=id&lr=&id=GP_ADwAAQBAJ&oi=fnd&pg=PR7&dq=modul+SINGLE+AND+DOUBLE+LINKED+LIST+c%2B%2B&ots=86f0Qs-P8U&sig=5KnO8VZm-t7sNtgREo8oEZSmDEU. Accessed 24 Mar. 2024.
