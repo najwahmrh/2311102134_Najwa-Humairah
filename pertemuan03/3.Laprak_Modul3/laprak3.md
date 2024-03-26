@@ -17,8 +17,8 @@ Alamat elemen adalah pointer. Setiap simpul terdiri dari dua bagian: yang pertam
 
 ### 2. [Double linked list]
 Penggunaan Double Linked List hampir sama dengan penggunaan Single Linked List yang telah kita pelajari sebelumnya. Yang berbeda adalah bahwa Double Linked List menggunakan pointer baru, prev, yang dapat digunakan untuk menggeser mundur sementara tetap mempertahankan pointer next. Double Linked List memiliki tiga elemen penting untuk setiap simpul: elemen data (biasanya nilai), pointer next yang menunjuk ke simpul berikutnya, dan pointer prev yang menunjuk ke simpul sebelumnya. Dengan adanya pointer prev, Double Linked List memungkinkan operasi penghapusan dan penambahan pada simpul mana saja secara efisien.
-    a. Double Linked List lebih fleksibel daripada Single Linked List karena memiliki dua pointer penunjuk (next dan prev), tetapi memerlukan memori tambahan.
-    b. Ada 2 jenis Double Linked List, yaitu: Double Linked List Non Circular dan Double Linked List Circular. DLLNC adalah sebuah Linked List yang terdiri dari dua arah pointer, dengan node yang saling terhubung, namun kedua pointernya menunjuk ke NULL.
+1. Double Linked List lebih fleksibel daripada Single Linked List karena memiliki dua pointer penunjuk (next dan prev), tetapi memerlukan memori tambahan.
+2. Ada 2 jenis Double Linked List, yaitu: Double Linked List Non Circular dan Double Linked List Circular. DLLNC adalah sebuah Linked List yang terdiri dari dua arah pointer, dengan node yang saling terhubung, namun kedua pointernya menunjuk ke NULL.
 
 Keuntungan dari Double Linked List adalah memungkinkan operasi penambahan dan penghapusan pada simpul mana pun dengan efisien, yang membuatnya sangat berguna untuk menjalankan beberapa algoritma yang membutuhkan operasi ini. Selain itu, melakukan traversal list dari depan ke belakang dengan mudah dengan Double Linked List. Karena setiap simpul membutuhkan satu pointer tambahan, Double Linked List membutuhkan lebih banyak memori daripada Single Linked List. Selain itu, operasi penambahan dan penghapusan pada Double Linked List membutuhkan waktu yang lebih lama daripada pada Single Linked List.
 
