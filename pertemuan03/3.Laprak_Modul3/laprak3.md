@@ -17,8 +17,8 @@ Alamat elemen adalah pointer. Setiap simpul terdiri dari dua bagian: yang pertam
 
 ### 2. [Double linked list]
 Penggunaan Double Linked List hampir sama dengan penggunaan Single Linked List yang telah kita pelajari sebelumnya. Yang berbeda adalah bahwa Double Linked List menggunakan pointer baru, prev, yang dapat digunakan untuk menggeser mundur sementara tetap mempertahankan pointer next. Double Linked List memiliki tiga elemen penting untuk setiap simpul: elemen data (biasanya nilai), pointer next yang menunjuk ke simpul berikutnya, dan pointer prev yang menunjuk ke simpul sebelumnya. Dengan adanya pointer prev, Double Linked List memungkinkan operasi penghapusan dan penambahan pada simpul mana saja secara efisien.
-a. Double Linked List lebih fleksibel daripada Single Linked List karena memiliki dua pointer penunjuk (next dan prev), tetapi memerlukan memori tambahan.
-b. Ada 2 jenis Double Linked List, yaitu: Double Linked List Non Circular dan Double Linked List Circular. DLLNC adalah sebuah Linked List yang terdiri dari dua arah pointer, dengan node yang saling terhubung, namun kedua pointernya menunjuk ke NULL.
+    a. Double Linked List lebih fleksibel daripada Single Linked List karena memiliki dua pointer penunjuk (next dan prev), tetapi memerlukan memori tambahan.
+    b. Ada 2 jenis Double Linked List, yaitu: Double Linked List Non Circular dan Double Linked List Circular. DLLNC adalah sebuah Linked List yang terdiri dari dua arah pointer, dengan node yang saling terhubung, namun kedua pointernya menunjuk ke NULL.
 
 Keuntungan dari Double Linked List adalah memungkinkan operasi penambahan dan penghapusan pada simpul mana pun dengan efisien, yang membuatnya sangat berguna untuk menjalankan beberapa algoritma yang membutuhkan operasi ini. Selain itu, melakukan traversal list dari depan ke belakang dengan mudah dengan Double Linked List. Karena setiap simpul membutuhkan satu pointer tambahan, Double Linked List membutuhkan lebih banyak memori daripada Single Linked List. Selain itu, operasi penambahan dan penghapusan pada Double Linked List membutuhkan waktu yang lebih lama daripada pada Single Linked List.
 
@@ -732,17 +732,17 @@ int main(){
 }
 ```
 #### Output:
-Masukkan nama dan NIM:
+    -Masukkan nama dan NIM:
 ![Screenshot1](sc1_unguided1.png)
-Menghapus data Akechi:
+    -Menghapus data Akechi:
 ![Screenshot](sc2_unguided1.png)
-Menambahkan data Futaba diantara John dan Jane:
+    -Menambahkan data Futaba diantara John dan Jane:
 ![Screenshot](sc3_unguided1.png)
-Menambahkan data Igor diawal:
+    -Menambahkan data Igor diawal:
 ![Screenshot](sc4_unguided1.png)
-Mengubah data Michael menjadi Reyn:
+    -Mengubah data Michael menjadi Reyn:
 ![Screenshot](sc5_unguided1.png)
-Tampilkan seluruh data mahasiswa:
+    -Tampilkan seluruh data mahasiswa:
 ![Screenshot](sc6_unguided1.png)
 
 Program diatas adalah sebuah implementasi dari linked list dalam bahasa c++. Program ini memanfaatkan struktur data linked list untuk menyimpan data mahasiswa berupa nama dan umur. Program mendeklarasikan sebuah struct node dengan dua atribut, yaitu nama dan umur, dan sebuah pointer next yang menunjukkan ke node berikutnya. Selain itu, program mendeklarasikan dua variabel pointer head dan tail sebagai penanda awal dan akhir dari daftar yang terhubung. Program kemudian menetapkan berbagai cara untuk melakukan operasi pada daftar terhubung, seperti memulai, memeriksa apakah daftar terhubung kosong, menambah, menghapus, dan mengubah data di depan, belakang, dan tengah, menghitung jumlah node, dan menampilkan data.
@@ -753,7 +753,7 @@ Pada fungsi main program mengaktifkan daftar terhubung dan menambahkan beberapa 
 ### 2. [Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.]
 
 ![soal2](Soal2_unguided2_gambar1.png)
-![Soal2](Soal1_unguided2_gambar2.png)
+![Soal2](Soal2_unguided2_gambar2.png)
 
 ```C++
 #include <iostream>
