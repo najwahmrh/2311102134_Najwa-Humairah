@@ -414,7 +414,7 @@ Pada codingan diatas yaitu mengimplementasikan struktur data linked list double/
 
 ### 1. [Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user.]
 
-![soal1](soal1_unguided1.png)
+![soal1](Soal1_unguided1.png)
 
 ```C++
 #include <iostream>
@@ -752,8 +752,8 @@ Pada fungsi main program mengaktifkan daftar terhubung dan menambahkan beberapa 
 
 ### 2. [Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.]
 
-![soal2](soal2_unguided2_gambar1.png)
-![Soal2](soal1_unguided2_gambar2.png)
+![soal2](Soal2_unguided2_gambar1.png)
+![Soal2](Soal1_unguided2_gambar2.png)
 
 ```C++
 #include <iostream>
