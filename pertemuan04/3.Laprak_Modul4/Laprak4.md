@@ -1143,6 +1143,7 @@ int main()
 ```
 #### Output:
 1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
+
 TAMPILAN MENU
 ![Screenshot output_unguided1](screenshot_unguided.png)
 
@@ -1161,41 +1162,42 @@ TAMPILAN OPERASI UBAH
 ![Screenshot output_unguided1](screenshot8_unguided.png)
 ![Screenshot output_unguided1](screenshot9_unguided.png)
 
-- TAMPILAN OPERASI TAMPIL DATA
+TAMPILAN OPERASI TAMPIL DATA
 ![Screenshot output_unguided1](screenshot10_unguided.png)
 
 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah)
 ![Screenshot output_unguided1](screenshot11_unguided.png)
 
 3. Lakukan perintah berikut
-    a. Tambahkan data 'wati 2330004' diantara Farrel dan Denis:
+
+a. Tambahkan data 'wati 2330004' diantara Farrel dan Denis:
 ![Screenshot output_unguided](screenshot_output3a_unguided.png)
 
-    b. Hapus data Denis:
+b. Hapus data Denis:
 ![Screenshot output_unguided](screenshot_output3b_unguided.png)
 
-    c. Tambahkan data 'owi 2330000' di awal:
+c. Tambahkan data 'owi 2330000' di awal:
 ![Screenshot output_unguided](screenshot_output3c_unguided.png)
 
-    d. Tambahkan data 'David 23300100' di akhir:
+d. Tambahkan data 'David 23300100' di akhir:
 ![Screenshot output_unguided](screenshot_output3d_unguided.png)
 
-    e. Ubah data Udin menjadi data data 'Idin 23300045':
+e. Ubah data Udin menjadi data data 'Idin 23300045':
 ![Screenshot output_unguided](screenshot_output3e_unguided.png)
 
-    f. Ubah data terakhir menjadi 'Lucy 23300101':
+f. Ubah data terakhir menjadi 'Lucy 23300101':
 ![Screenshot output_unguided](screenshot_output3f_unguided.png)
 
-    g. Hapus data awal:
+g. Hapus data awal:
 ![Screenshot output_unguided](screenshot_output3g_unguided.png)
 
-    h. Ubah data awal menjadi 'Bagas 2330002':
+h. Ubah data awal menjadi 'Bagas 2330002':
 ![Screenshot output_unguided](screenshot_output3h_unguided.png)
 
-    i. Hapus data akhir
+i. Hapus data akhir
 ![Screenshot output_unguided](screenshot_output3i_unguided.png)
 
-    j. Tampilkan seluruh data:
+j. Tampilkan seluruh data:
 ![Screenshot output_unguided](screenshot_output3j_unguided.png)
 
 Program diatas adalah implementasi dari single linked list non-circular yang digunakan untuk menyimpan data mahasiswa. Program ini memiliki beberapa fungsi seperti menambahkan data ke depan, tengah, atau belakang, menghitung jumlah data pada list, menghapus data dari depan, tengah, atau belakang, serta mengubah data pada posisi tertentu. Setiap data mahasiswa terdiri dari nama dan NIM. Program ini memiliki beberapa fungsi utama yaitu "init()" untuk menginisialisasi awal linked list, "isEmpty()" untuk memeriksa apakah linked list kosong atau tidak, "insertDepan()", "insertBelakang()", dan "insertTengah()" untuk menambahkan data pada linked list, "hitungList()" untuk menghitung jumlah data pada linked list, "hapusDepan()", "hapusBelakang()", dan "hapusTengah()" untuk menghapus data pada linked list, serta "ubahDepan()" dan "ubahTengah()" untuk mengubah data pada posisi tertentu.
