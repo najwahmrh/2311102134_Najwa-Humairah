@@ -15,21 +15,21 @@ baru->data = databaru;
 baru->next = NULL;
 ```
 
-a. tambah depan
+a. tambah depan</p>
 Gerbong paling depan akan terhubung ke node baru, tetapi jika data masih kosong, penambahan data dilakukan dengan menunjuk head gerbong tersebut. 
 ![ilustrasi1_tambah depan](ilustrasi1_tambah depan.png)
 
-b. tambah belakang
+b. tambah belakang</p>
 Penambahan data dibelakang akan selalu dikaitkan dengan tail karena tail selalu berada di paling belakang gerbong. setelah dikaitkan dengan node, maka node tersebut menjadi tail yang baru.
 
 2.penghapusan node</p>
 Jika ada list lain selain list "head" dalam barisan linked list non-circular, list yang digunakan sebagai "head" tidak boleh dihapus; sebaliknya, "head" harus dipindahkan terlebih dahulu. Keyword "delete" digunakan.
 
-a. hapus depan
+a. hapus depan</p>
 Fungsi ini menghapus data terdepan yang ditunjuk oleh head. Jika keadaan ditunjuk oleh pointer, penghapusan tidak dapat dilakukan. Oleh karena itu, penunjukan dilakukan dengan pointer hapus yang menujuk pada head, pergeseran node dilakukan sehingga node setelah head menjadi head yang baru, dan perintah delete digunakan untuk menghapus pointer hapus. Data tidak ada jika tail tetap NULL.
 ![ilustrasi2_hapus depan](ilustrasi2_hapus depan.png)
 
-b. hapus belakang
+b. hapus belakang</p>
 Dengan tail, penghapusan data di belakang menjadi lebih mudah. Jika keadaan node ditunjukkan oleh pointer, penghapusan node tidak boleh dilakukan. Oleh karena itu, variable hapus terlebih dahulu ditujukan ke tail. Kemudian dibutuhkan pointer bantu untuk membantu pergeseran dari head ke node berikutnya sampai sebelum tail, sehingga tail dapat ditunjukkan ke bantu dan bantu tersebut menjadi tail yang baru. Setelah itu, perintah delete digunakan untuk menghapus pointer bantu. Jika ujungnya masih NULL, berarti list masih kosong!
 
 3.pencetakan node</p>
@@ -1143,20 +1143,20 @@ int main()
 ```
 #### Output:
 1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
-- TAMPILAN MENU
+TAMPILAN MENU
 ![Screenshot output_unguided1](screenshot_unguided.png)
 
-- TAMPILAN OPERASI TAMBAH
+TAMPILAN OPERASI TAMBAH
 ![Screenshot output_unguided1](screenshot1_unguided.png)
 ![Screenshot output_unguided1](screenshot2_unguided.png)
 ![Screenshot output_unguided1](screenshot3_unguided.png)
 
-- TAMPILAN OPERASI HAPUS
+TAMPILAN OPERASI HAPUS
 ![Screenshot output_unguided1](screenshot4_unguided.png)
 ![Screenshot output_unguided1](screenshot5_unguided.png)
 ![Screenshot output_unguided1](screenshot6_unguided.png)
 
-- TAMPILAN OPERASI UBAH
+TAMPILAN OPERASI UBAH
 ![Screenshot output_unguided1](screenshot7_unguided.png)
 ![Screenshot output_unguided1](screenshot8_unguided.png)
 ![Screenshot output_unguided1](screenshot9_unguided.png)
