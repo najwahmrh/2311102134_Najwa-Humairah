@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "d:/Folder Najwa/2311102134_Najwa-Humairah/pertemuan04/2.Unguided",
+      "program": "d:/Folder Najwa/2311102134_Najwa-Humairah/pertemuan04/2.Unguided/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
