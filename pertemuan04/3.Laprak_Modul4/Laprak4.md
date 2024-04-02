@@ -7,7 +7,7 @@
 Linked List Non Circular memiliki node pertama (head) dan terakhir (tail) yang tidak terhubung satu sama lain. Pointer terakhir (tail) dari daftar terkait ini selalu bernilai "NULL" sebagai pertanda data terakhir dalam list-nya. Berikut adalah contoh gambar terkait linked list non-circular :
 ![gambar1_linked list non circular](gambar1.png)
 
-1.pembentukan node</p>-
+1.pembentukan node</p>
 Keyword "new" digunakan untuk membuat sebuah node baru dengan alokasi memori, kemudian diisi data, dan pointer berikutnya ditunjuk ke NULL. Pembentukan node tidak dapat dilakukan sekaligus, tetapi harus satu per satu, ini berkaitan dengan cara menyambungkan antar node. Contohnya:
 ```C++
 baru = new node;
@@ -15,21 +15,21 @@ baru->data = databaru;
 baru->next = NULL;
 ```
 
-    - tambah depan
+a. tambah depan
 Gerbong paling depan akan terhubung ke node baru, tetapi jika data masih kosong, penambahan data dilakukan dengan menunjuk head gerbong tersebut. 
 ![ilustrasi1_tambah depan](ilustrasi1_tambah depan.png)
 
-    - tambah belakang
+b. tambah belakang
 Penambahan data dibelakang akan selalu dikaitkan dengan tail karena tail selalu berada di paling belakang gerbong. setelah dikaitkan dengan node, maka node tersebut menjadi tail yang baru.
 
 2.penghapusan node</p>
 Jika ada list lain selain list "head" dalam barisan linked list non-circular, list yang digunakan sebagai "head" tidak boleh dihapus; sebaliknya, "head" harus dipindahkan terlebih dahulu. Keyword "delete" digunakan.
 
-    - hapus depan
+a. hapus depan
 Fungsi ini menghapus data terdepan yang ditunjuk oleh head. Jika keadaan ditunjuk oleh pointer, penghapusan tidak dapat dilakukan. Oleh karena itu, penunjukan dilakukan dengan pointer hapus yang menujuk pada head, pergeseran node dilakukan sehingga node setelah head menjadi head yang baru, dan perintah delete digunakan untuk menghapus pointer hapus. Data tidak ada jika tail tetap NULL.
 ![ilustrasi2_hapus depan](ilustrasi2_hapus depan.png)
 
-    - hapus belakang
+b. hapus belakang
 Dengan tail, penghapusan data di belakang menjadi lebih mudah. Jika keadaan node ditunjukkan oleh pointer, penghapusan node tidak boleh dilakukan. Oleh karena itu, variable hapus terlebih dahulu ditujukan ke tail. Kemudian dibutuhkan pointer bantu untuk membantu pergeseran dari head ke node berikutnya sampai sebelum tail, sehingga tail dapat ditunjukkan ke bantu dan bantu tersebut menjadi tail yang baru. Setelah itu, perintah delete digunakan untuk menghapus pointer bantu. Jika ujungnya masih NULL, berarti list masih kosong!
 
 3.pencetakan node</p>
@@ -1145,18 +1145,22 @@ int main()
 1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
 - TAMPILAN MENU
 ![Screenshot output_unguided1](screenshot_unguided.png)
+
 - TAMPILAN OPERASI TAMBAH
 ![Screenshot output_unguided1](screenshot1_unguided.png)
 ![Screenshot output_unguided1](screenshot2_unguided.png)
 ![Screenshot output_unguided1](screenshot3_unguided.png)
+
 - TAMPILAN OPERASI HAPUS
 ![Screenshot output_unguided1](screenshot4_unguided.png)
 ![Screenshot output_unguided1](screenshot5_unguided.png)
 ![Screenshot output_unguided1](screenshot6_unguided.png)
+
 - TAMPILAN OPERASI UBAH
 ![Screenshot output_unguided1](screenshot7_unguided.png)
 ![Screenshot output_unguided1](screenshot8_unguided.png)
 ![Screenshot output_unguided1](screenshot9_unguided.png)
+
 - TAMPILAN OPERASI TAMPIL DATA
 ![Screenshot output_unguided1](screenshot10_unguided.png)
 
@@ -1166,22 +1170,31 @@ int main()
 3. Lakukan perintah berikut
     a. Tambahkan data 'wati 2330004' diantara Farrel dan Denis:
 ![Screenshot output_unguided](screenshot_output3a_unguided.png)
+
     b. Hapus data Denis:
 ![Screenshot output_unguided](screenshot_output3b_unguided.png)
+
     c. Tambahkan data 'owi 2330000' di awal:
 ![Screenshot output_unguided](screenshot_output3c_unguided.png)
+
     d. Tambahkan data 'David 23300100' di akhir:
 ![Screenshot output_unguided](screenshot_output3d_unguided.png)
+
     e. Ubah data Udin menjadi data data 'Idin 23300045':
 ![Screenshot output_unguided](screenshot_output3e_unguided.png)
+
     f. Ubah data terakhir menjadi 'Lucy 23300101':
 ![Screenshot output_unguided](screenshot_output3f_unguided.png)
+
     g. Hapus data awal:
 ![Screenshot output_unguided](screenshot_output3g_unguided.png)
+
     h. Ubah data awal menjadi 'Bagas 2330002':
 ![Screenshot output_unguided](screenshot_output3h_unguided.png)
+
     i. Hapus data akhir
 ![Screenshot output_unguided](screenshot_output3i_unguided.png)
+
     j. Tampilkan seluruh data:
 ![Screenshot output_unguided](screenshot_output3j_unguided.png)
 
