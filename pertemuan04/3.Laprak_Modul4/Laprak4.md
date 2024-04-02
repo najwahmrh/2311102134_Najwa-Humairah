@@ -9,9 +9,12 @@ Linked List Non Circular memiliki node pertama (head) dan terakhir (tail) yang t
 
 1.pembentukan node</p>-
 Keyword "new" digunakan untuk membuat sebuah node baru dengan alokasi memori, kemudian diisi data, dan pointer berikutnya ditunjuk ke NULL. Pembentukan node tidak dapat dilakukan sekaligus, tetapi harus satu per satu, ini berkaitan dengan cara menyambungkan antar node. Contohnya:
+```C++
 baru = new node;
 baru->data = databaru;
 baru->next = NULL;
+```
+
     - tambah depan
 Gerbong paling depan akan terhubung ke node baru, tetapi jika data masih kosong, penambahan data dilakukan dengan menunjuk head gerbong tersebut. 
 ![ilustrasi1_tambah depan](ilustrasi1_tambah depan.png)
@@ -21,6 +24,7 @@ Penambahan data dibelakang akan selalu dikaitkan dengan tail karena tail selalu 
 
 2.penghapusan node</p>
 Jika ada list lain selain list "head" dalam barisan linked list non-circular, list yang digunakan sebagai "head" tidak boleh dihapus; sebaliknya, "head" harus dipindahkan terlebih dahulu. Keyword "delete" digunakan.
+
     - hapus depan
 Fungsi ini menghapus data terdepan yang ditunjuk oleh head. Jika keadaan ditunjuk oleh pointer, penghapusan tidak dapat dilakukan. Oleh karena itu, penunjukan dilakukan dengan pointer hapus yang menujuk pada head, pergeseran node dilakukan sehingga node setelah head menjadi head yang baru, dan perintah delete digunakan untuk menghapus pointer hapus. Data tidak ada jika tail tetap NULL.
 ![ilustrasi2_hapus depan](ilustrasi2_hapus depan.png)
@@ -35,21 +39,26 @@ Linked list circular memerlukan dummy node atau node pengecoh, yang biasanya dis
 ![gambar2_linked list circular](gambar2.png)
 
 1. Deklarasi Simpul(Node)
+```C++
 struct Node
 {
     string data;
     Node *next;
 };
+```
 
 2. Membuat dan Menginisialisasi Pointer Head dan Tail
+```C++
 Node *head, *tail, *baru, *bantu, *hapus;
 void init()
 {
     head = NULL;
     tail = head;
 }
+```
 
 3. Pengecekan Kondisi Linked List
+```C++
 int isEmpty()
 {
     if (head == NULL)
@@ -57,16 +66,20 @@ int isEmpty()
     else
         return 0; // false
 }
+```
 
 4. Pembuatan Simpul (Node)
+```C++
 void buatNode(string data)
 {
     baru = new Node;
     baru->data = data;
     baru->next = NULL;
 }
+```
 
 5. Penambahan Simpul (Node)
+```C++
 // Tambah Depan
 void insertDepan(string data)
 {
@@ -89,8 +102,10 @@ void insertDepan(string data)
         tail->next = head;
     }
 }
+```
 
 6. Penghapusan Simpul (Node)
+```C++
 void hapusBelakang()
 {
     if (isEmpty() == 0)
@@ -119,8 +134,10 @@ void hapusBelakang()
         }
     }
 }
+```
 
 7. Menampilkan Data Linked List
+```C++
 void tampil()
 {
     if (isEmpty() == 0)
@@ -134,6 +151,7 @@ void tampil()
         cout << endl;
     }
 }
+```
 
 ## Guided
 
@@ -1125,21 +1143,21 @@ int main()
 ```
 #### Output:
 1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
-    - TAMPILAN MENU
+- TAMPILAN MENU
 ![Screenshot output_unguided1](screenshot_unguided.png)
-    - TAMPILAN OPERASI TAMBAH
+- TAMPILAN OPERASI TAMBAH
 ![Screenshot output_unguided1](screenshot1_unguided.png)
 ![Screenshot output_unguided1](screenshot2_unguided.png)
 ![Screenshot output_unguided1](screenshot3_unguided.png)
-    - TAMPILAN OPERASI HAPUS
+- TAMPILAN OPERASI HAPUS
 ![Screenshot output_unguided1](screenshot4_unguided.png)
 ![Screenshot output_unguided1](screenshot5_unguided.png)
 ![Screenshot output_unguided1](screenshot6_unguided.png)
-    - TAMPILAN OPERASI UBAH
+- TAMPILAN OPERASI UBAH
 ![Screenshot output_unguided1](screenshot7_unguided.png)
 ![Screenshot output_unguided1](screenshot8_unguided.png)
 ![Screenshot output_unguided1](screenshot9_unguided.png)
-    - TAMPILAN OPERASI TAMPIL DATA
+- TAMPILAN OPERASI TAMPIL DATA
 ![Screenshot output_unguided1](screenshot10_unguided.png)
 
 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah)
@@ -1147,25 +1165,25 @@ int main()
 
 3. Lakukan perintah berikut
     a. Tambahkan data 'wati 2330004' diantara Farrel dan Denis:
-    ![Screenshot output_unguided](screenshot_output3a_unguided.png)
+![Screenshot output_unguided](screenshot_output3a_unguided.png)
     b. Hapus data Denis:
-    ![Screenshot output_unguided](screenshot_output3b_unguided.png)
+![Screenshot output_unguided](screenshot_output3b_unguided.png)
     c. Tambahkan data 'owi 2330000' di awal:
-    ![Screenshot output_unguided](screenshot_output3c_unguided.png)
+![Screenshot output_unguided](screenshot_output3c_unguided.png)
     d. Tambahkan data 'David 23300100' di akhir:
-    ![Screenshot output_unguided](screenshot_output3d_unguided.png)
+![Screenshot output_unguided](screenshot_output3d_unguided.png)
     e. Ubah data Udin menjadi data data 'Idin 23300045':
-    ![Screenshot output_unguided](screenshot_output3e_unguided.png)
+![Screenshot output_unguided](screenshot_output3e_unguided.png)
     f. Ubah data terakhir menjadi 'Lucy 23300101':
-    ![Screenshot output_unguided](screenshot_output3f_unguided.png)
+![Screenshot output_unguided](screenshot_output3f_unguided.png)
     g. Hapus data awal:
-    ![Screenshot output_unguided](screenshot_output3g_unguided.png)
+![Screenshot output_unguided](screenshot_output3g_unguided.png)
     h. Ubah data awal menjadi 'Bagas 2330002':
-    ![Screenshot output_unguided](screenshot_output3h_unguided.png)
+![Screenshot output_unguided](screenshot_output3h_unguided.png)
     i. Hapus data akhir
-    ![Screenshot output_unguided](screenshot_output3i_unguided.png)
+![Screenshot output_unguided](screenshot_output3i_unguided.png)
     j. Tampilkan seluruh data:
-    ![Screenshot output_unguided](screenshot_output3j_unguided.png)
+![Screenshot output_unguided](screenshot_output3j_unguided.png)
 
 Program diatas adalah implementasi dari single linked list non-circular yang digunakan untuk menyimpan data mahasiswa. Program ini memiliki beberapa fungsi seperti menambahkan data ke depan, tengah, atau belakang, menghitung jumlah data pada list, menghapus data dari depan, tengah, atau belakang, serta mengubah data pada posisi tertentu. Setiap data mahasiswa terdiri dari nama dan NIM. Program ini memiliki beberapa fungsi utama yaitu "init()" untuk menginisialisasi awal linked list, "isEmpty()" untuk memeriksa apakah linked list kosong atau tidak, "insertDepan()", "insertBelakang()", dan "insertTengah()" untuk menambahkan data pada linked list, "hitungList()" untuk menghitung jumlah data pada linked list, "hapusDepan()", "hapusBelakang()", dan "hapusTengah()" untuk menghapus data pada linked list, serta "ubahDepan()" dan "ubahTengah()" untuk mengubah data pada posisi tertentu.
 
