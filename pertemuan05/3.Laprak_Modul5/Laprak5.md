@@ -26,9 +26,10 @@ Keterbatasan tabel hash menyebabkan ada dua angka yang jika dimasukkan ke dalam 
 
 contoh:
 
-Kita ingin memasukkan angka 6 dan 29.
-Hash(6) 6% 23 = 6
-Hash(29) 29% 23 = 6
+Kita ingin memasukkan angka 6 dan 29.<br/>
+Hash(6) 6% 23 = 6<br/>
+Hash(29) 29% 23 = 6<br/>
+
 Pertama-tama anggap tabel masih kosong. Pada saat angka 6 masuk akan ditempatkan pada posisi indeks 6, angka kedua 29 seharusnya ditempatkan di indeks 6 juga, namun karena indeks ke-6 sudah ditempati maka 29 tidak bisa ditempatkan di situ, di sinilah terjadi collision. Cara penanganannya bermacam-macam :
 
 a.Collision Resolution Open Addressing<br/>
@@ -62,13 +63,13 @@ Insert (K, Free); Table (addr).link Free;}
 
 3. Double Hashing Pada saat terjadi collision, terdapat fungsi hash yang kedua untuk menentukan posisinya kembali.
 
-a. Collision Resolution Chaining
-    - Tambahkan key and entry di manapun dalam list (lebih mudah dari depan)
-    - Keunggulan dibandingkan open addressing.
+a. Collision Resolution Chaining<br/>
+    - Tambahkan key and entry di manapun dalam list (lebih mudah dari depan)<br/>
+    - Keunggulan dibandingkan open addressing.<br/>
 Proses insert dan remove lebih sederhana<br/>
 Ukuran Array bukan batasan (tetapi harus tetap meminimalisir collision: buat ukuran tabel sesuai dengan jumlah key dan entry yang diharapkan)<br/>
-    - Kerugian:
-Overhead pada memory tinggi jika jumlah entry sedikit<br/>
+    - Kerugian:<br/>
+Overhead pada memory tinggi jika jumlah entry sedikit
 
 ## Guided
 
@@ -524,7 +525,7 @@ int main() {
 ![Screenshot output_unguided1](screenshot_unguided1.png)
 ![Screenshot output_unguided1](screenshot_unguided2.png)
 ![Screenshot output_unguided1](screenshot_unguided3.png)
-![Screenshot output_unguided1](screenshot_unguided5.png)
+![Screenshot output_unguided1](screenshot_unguided4.png)
 
 Dalam program diatas, struktur data tabel hash digunakan untuk menyimpan data siswa menggunakan bahasa C++. Struktur data ini memungkinkan untuk menambah, menghapus, mencari, dan menampilkan data siswa berdasarkan nama atau NIM serta mencari data siswa berdasarkan rentang nilai. Untuk mengelola data siswa, program ini menggunakan kelas HashMap, yang memungkinkan beberapa operasi utama seperti memasukkan, menghapus, mencariByNIM, mencariRentangNilai, dan menulis. Setiap siswa diwakili oleh objek HashNode yang menyimpan informasi nama, NIM, dan nilai. Kelas HashMap memiliki tabel hashing yang digambarkan sebagai array vektor dinamis dengan ukuran tabel diubah menjadi bilangan prima untuk meningkatkan efisiensi hashing. Fungsi hashing digunakan untuk mengonversi nama siswa dalam tabel hashing menjadi indeks.
 
