@@ -543,5 +543,5 @@ Setelah pengguna memilih opsi, program akan menjalankan operasi yang sesuai dan 
 Hash table adalah struktur data yang efektif untuk menyimpan dan mengelola data dalam aplikasi komputer. Program yang dibuat untuk menggunakan hash table dalam bahasa C++ menunjukkan kemampuan hash table untuk melakukan operasi pencarian, penyisipan, dan penghapusan data dengan kompleksitas waktu rata-rata yang rendah, serta untuk menangani tabrakan dengan metode chaining. Program tersebut juga menjelaskan bagaimana hash table dapat digunakan dalam berbagai konteks pengembangan perangkat lunak dan interaksi dengan pengguna melalui antarmuka yang sederhana. Hasilnya menunjukkan bahwa hash table sangat penting untuk meningkatkan kinerja dan efisiensi aplikasi yang menggunakan penyimpanan dan pengelolaan data.
 
 ## Referensi
-[1] Praktikum Algoritma Dan Struktur Data 2010 BAB XI HASHING. 2010.
+[1] Praktikum Algoritma Dan Struktur Data 2010 BAB XI HASHING. 2010.<br/>
 [2] Mailund, T. (2019). Kegembiraan hashing: pemrograman tabel hash dengan C. Apress. 
