@@ -7,7 +7,7 @@
 Stack adalah sebuah kumpulan data di mana data diletakkan di atas data lain. Oleh karena itu, stack adalah struktur data yang menggunakan konsep LIFO, dan elemen pertama yang diambil adalah elemen terakhir yang disimpan dalam stack. Kita melakukan push dalam proses komputasi untuk meletakkan sebuah elemen di bagian atas tumpukan, dan kita melakukan pop untuk memindahkan elemen tersebut dari tempat tersebut.
 
 Ada beberapa cara untuk menyajikan sebuah tumpukan, tergantung pada masalah yang akan kita selesaikan. Dalam bab ini, kita akan menggunakan cara paling sederhana , yaitu tipe data yang sudah kita kenal, yaitu array. Kita dapat menggunakan array untuk menyajikan sebuah stack, dengan menganggap bahwa banyaknya elemen maksimum dalam stack tidak akan melebihi batas maksimum banyaknya elemen dalam array. Jika kita terus menambah data pada saat ukuran stack meningkat, akan terjadi overflow. Oleh karena itu, untuk mencatat posisi ujung tumpukan, kita perlu menggunakan tipe struktur data , atau struct, yang terdiri dari dua medan. Medan pertama bertipe array untuk menyimpan elemen stack, dan medan kedua bertipe integer untuk mencatat posisi ujung stack. 
-![Ilustrasi Stack](Ilustrasi stack.png)
+![Ilustrasi_stack](Ilustrasi_stack.png)
 
 ### 2. [Operasi Dasar Pada Stack]
 Operasi-operasi Dasar pada stack adalah sebagai berikut: 
@@ -223,7 +223,7 @@ Kode di atas adalah sebuah program sederhana dalam bahasa c++ yang menggunakan k
 ## Unguided 
 
 ### 1. [Buatlah program untuk menentukan apakah kalimat tersebut yang diinputkan dalam program stack adalah palindrom/tidak. Palindrom kalimat yang dibaca dari depan dan belakang sama. Jelaskan bagaimana cara kerja programnya.]
-![Soal_no1](soal1.png)
+![Soal_no1](Soal_no1.png)
 
 ```C++
 // Najwa Humairah
@@ -237,7 +237,7 @@ Kode di atas adalah sebuah program sederhana dalam bahasa c++ yang menggunakan k
 Dalam program diatas, 
 
 ### 2. [Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?]
-![Soal_no2](Soal2.png)
+![Soal_no2](Soal_no2.png)
 
 ```C++
 // Najwa Humairah
