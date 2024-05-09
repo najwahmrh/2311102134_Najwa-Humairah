@@ -62,14 +62,14 @@ void pop() {
 }
 ```
 
-5. Clear : Fungsi yang digunakan untuk mengosongkan stack dengan cara mengeset Top dengan -1. Jika Top bernilai kurang dari nol maka stack dianggap kosong.
+6. Clear : Fungsi yang digunakan untuk mengosongkan stack dengan cara mengeset Top dengan -1. Jika Top bernilai kurang dari nol maka stack dianggap kosong.
 ```C++
 void clear () {
 top=-1
 }
 ```
 
-6. Retrieve : fungsi yang digunakan untuk melihat nilai yang berada pada posisi tumpukan teratas.
+7. Retrieve : fungsi yang digunakan untuk melihat nilai yang berada pada posisi tumpukan teratas.
 ```C++
 void print() {
     for (int i=0; i<=top; i++) {
@@ -229,12 +229,60 @@ Kode di atas adalah sebuah program sederhana dalam bahasa c++ yang menggunakan k
 // Najwa Humairah
 // 2311102134
 
+#include <iostream>
+#include <string>
+#include <stack>
 
+using namespace std;
+
+bool isPalindrom_134(string str) {
+    stack<char> charStack;
+    int length = str.length();
+
+    for (int i = 0; i < length / 2 ; i++) {
+        charStack.push(str[i]);
+    }
+
+    int start = length / 2;
+    if (length % 2 != 0) {
+        start++;
+    }
+    for (int i = start; i < length; i++) {
+        if (str[i] != charStack.top()) {
+            return false;
+        }
+        charStack.pop();
+    }
+
+    return true;
+}
+
+int main() {
+    char lanjutkan_134;
+    do {
+        string input;
+        cout << "\nMasukkan kalimat: ";
+        getline(cin, input);
+
+        if (isPalindrom_134(input)) {
+            cout << "Kalimat tersebut adalah : Palindrom" << endl;
+        } else {
+            cout << "Kalimat tersebut adalah : Bukan Palindrom" << endl;
+        }
+
+        cout << "Ingin memasukkan kata atau kalimat lain? (y/n): ";
+        cin >> lanjutkan_134;
+        cin.ignore();
+    } while (lanjutkan_134== 'y' || lanjutkan_134 == 'Y');
+
+    return 0;
+}
 ```
-#### Output:
-![Screenshot output](screenshot_unguided.png)
 
-Dalam program diatas, 
+#### Output:
+![Screenshot output](screenshot_unguided1.png)
+
+Dalam program diatas, yaitu menentukan apakah sebuah string atau kalimat adalalh palindrom. Palindrom adalah string yang tetap sama jika dibaca dari kanan ke kiri atau kiri ke kanan. Program ini menggunakan C++ standar seperti <iostream>, <string>, dan <stack>. Dengan menggunakan struktur data tumpukan, atau stack, fungsi isPalindrom_134() menentukan apakah sebuah string adalah palindrom. Fungsi ini membandingkan setengah bagian awal string dengan setengah bagian akhir string secara terbalik. Untuk membandingkan karakter-karakter dari dua string, fungsi isPalindrom_134() menggunakan struktur data stack. Pertama, setengah bagian awal string dimasukkan ke dalam stack (jika panjang string ganjil), dan kemudian setengah kedua string dibandingkan dengan karakter-karakter yang disimpan dalam stack. Fungsi mengembalikan false jika ada karakter yang tidak sesuai, menandakan string bukan palindrom, tetapi jika semua karakter sesuai, fungsi mengembalikan benar, menandakan string adalah palindrom. Pada fungsi main() pengguna dapat memasukkan kalimat atau kata dan kemudian mengetahui apakah itu palindrom dengan menggunakan fungsi isPalindrom_134. Jika hasilnya palindrom, program mencetak "Kalimat tersebut adalah : Palindrom", dan jika bukan, mencetak "Kalimat tersebut adalah : Bukan Palindrom". Pertanyaan, "Ingin memasukkan kata atau kalimat lain?" ditanya kepada pengguna setelah itu. (y/n) Sampai pengguna memilih untuk berhenti dengan mengetik 'n' atau 'N'.
 
 ### 2. [Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?]
 ![Soal_no2](Soal_no2.png)
@@ -243,15 +291,56 @@ Dalam program diatas,
 // Najwa Humairah
 // 2311102134
 
+#include <iostream>
+#include <stack>
+#include <string>
 
+using namespace std;
+
+string BalikkanKata_134(string kalimat_134) {
+    stack<char> karakterStack_134;
+
+    // Operasi PUSH
+    // Memasukkan setiap karakter dari kalimat ke dalam stack
+    for (char karakterKata : kalimat_134) {
+        karakterStack_134.push(karakterKata);
+    }
+
+    string BalikkanKata_134 = " ";
+
+    // Operasi POP
+    // Mengeluarkan setiap karakter dari stack untuk membentuk kalimat terbalik
+    
+    while (!karakterStack_134.empty()) {
+        BalikkanKata_134 += karakterStack_134.top();
+        karakterStack_134.pop();
+    }
+
+    return BalikkanKata_134;
+}
+
+int main() {
+    string kalimat_134;
+
+    cout << "Masukkan Kata ";
+    getline(cin, kalimat_134);
+
+    string kalimatTerbalik = BalikkanKata_134(kalimat_134);
+    cout << "DataStack Array : " <<  endl;
+    cout << "Data : " << kalimatTerbalik << endl;
+
+    return 0;
+}
 ```
-#### Output:
-![Screenshot output](screenshot_unguided.png)
 
-Dalam program diatas, 
+#### Output:
+![Screenshot output](screenshot_unguided2.png)
+
+Dalam program diatas yaitu untuk membalikkan sebuah kalimat dengan menggunakan struktur data stack. Konsep dasar stack adalah Last-In, First-Out (LIFO), di mana elemen terakhir yang dimasukkan akan menjadi elemen pertama yang keluar. Fungsi BalikkanKata_134() menerima sebuah string sebagai input dan mengembalikan string yang sudah dibalik. Fungsi ini menggunakan operasi push() untuk memasukkan setiap karakter dari input ke dalam stack, dan kemudian menggunakan operasi pop() untuk mengeluarkan setiap karakter dari stack, sehingga urutan karakter akan terbalik. Fungsi main() meminta pengguna menggunakan getline(cin, kalimat_134) untuk memasukkan kata atau kalimat. Setelah menerima input, fungsi memanggil BalikkanKata_134(kalimat_134) untuk membalikkan kalimat yang telah dimasukkan. Program ini menampilkan hasil dari tumpukan dengan menampilkan "DataStack Array :" dan "Data:", diikuti oleh kalimat yang sudah dibalik, sebelum menyimpan hasil pembalikan dalam variabel kalimatTerbalik.
 
 ## Kesimpulan
-Stack adalah struktur 
+Stack adalah konsep struktur data yang mengikuti prinsip Last-In, First-Out (LIFO) yang dimana elemen terakhir dimasukkan adalah yang pertama keluar. Dalam Stack terdapat beberapa istilah dan fungsi yang dapat digunakan antara lain top, isEmpty, isFull, push, pop, size, peek, serta clear. Mengecek palindrom, membalik urutan string, mengevaluasi ekspresi matematika, dan mengelola panggilan rekursif dalam program adalah beberapa manfaat Stack. 
 
 ## Referensi
 [1] Modul Praktikum Algoritma Dan Struktur Data MODUL IV STACK
+[2] Kurniawan, Rizky. Modul Pembelajaran Struktur Data.
