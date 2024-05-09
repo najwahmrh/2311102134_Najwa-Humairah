@@ -223,7 +223,7 @@ Kode di atas adalah sebuah program sederhana dalam bahasa c++ yang menggunakan k
 ## Unguided 
 
 ### 1. [Buatlah program untuk menentukan apakah kalimat tersebut yang diinputkan dalam program stack adalah palindrom/tidak. Palindrom kalimat yang dibaca dari depan dan belakang sama. Jelaskan bagaimana cara kerja programnya.]
-![Soal_no1](Soal_no1.png)
+![Soal_no1](soal_no1.png)
 
 ```C++
 // Najwa Humairah
@@ -285,7 +285,7 @@ int main() {
 Dalam program diatas, yaitu menentukan apakah sebuah string atau kalimat adalalh palindrom. Palindrom adalah string yang tetap sama jika dibaca dari kanan ke kiri atau kiri ke kanan. Program ini menggunakan C++ standar seperti <iostream>, <string>, dan <stack>. Dengan menggunakan struktur data tumpukan, atau stack, fungsi isPalindrom_134() menentukan apakah sebuah string adalah palindrom. Fungsi ini membandingkan setengah bagian awal string dengan setengah bagian akhir string secara terbalik. Untuk membandingkan karakter-karakter dari dua string, fungsi isPalindrom_134() menggunakan struktur data stack. Pertama, setengah bagian awal string dimasukkan ke dalam stack (jika panjang string ganjil), dan kemudian setengah kedua string dibandingkan dengan karakter-karakter yang disimpan dalam stack. Fungsi mengembalikan false jika ada karakter yang tidak sesuai, menandakan string bukan palindrom, tetapi jika semua karakter sesuai, fungsi mengembalikan benar, menandakan string adalah palindrom. Pada fungsi main() pengguna dapat memasukkan kalimat atau kata dan kemudian mengetahui apakah itu palindrom dengan menggunakan fungsi isPalindrom_134. Jika hasilnya palindrom, program mencetak "Kalimat tersebut adalah : Palindrom", dan jika bukan, mencetak "Kalimat tersebut adalah : Bukan Palindrom". Pertanyaan, "Ingin memasukkan kata atau kalimat lain?" ditanya kepada pengguna setelah itu. (y/n) Sampai pengguna memilih untuk berhenti dengan mengetik 'n' atau 'N'.
 
 ### 2. [Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?]
-![Soal_no2](Soal_no2.png)
+![Soal_no2](soal_no2.png)
 
 ```C++
 // Najwa Humairah
