@@ -462,6 +462,6 @@ Pada fungsi main(), antrian diinisialisasi terlebih dahulu. Selanjutnya, lima da
 QUEUE adalah struktur data linear yang mengikuti prinsip First In First Out (FIFO), di mana elemen yang pertama kali dimasukkan akan menjadi elemen yang pertama kali dikeluarkan. Ini sering digunakan dalam situasi di mana urutan elemen harus dipertahankan, seperti dalam penjadwalan tugas, antrian layanan pelanggan, dan pengelolaan proses sistem operasi. Queue dapat diimplementasikan menggunakan berbagai struktur data dasar seperti array atau linked list. Terdapat beberapa operasi umum yang dapat dilakukan pada queue, seperti enqueue untuk menambahkan elemen, dequeue untuk mengeluarkan elemen, display untuk menampilkan isi queue, isEmpty untuk memeriksa apakah antrian kosong, isFull untuk memeriksa apakah antrian penuh, destroy/clear untuk menghapus semua elemen, dan peek untuk melihat nilai elemen pertama tanpa menghapusnya.
 
 ## Referensi
-[1] S.Kom, I. Komang Setia Buana, et al. STRUKTUR DATA. Google Books, Penerbit Andi.
+[1] S.Kom, I. Komang Setia Buana, et al. STRUKTUR DATA. Google Books, Penerbit Andi.<br/>
 [2] Sindar, Anita. (2019). "STRUKTUR DATA DAN ALGORITMA DENGAN C++". Serang: CV. AA. RIZKY.<br/>
 [3] Johnson Sihombing. 2019 . PENERAPAN STACK DAN QUEUE PADA ARRAY DAN LINKED LIST DALAM JAVA. Bandung.<br/>
