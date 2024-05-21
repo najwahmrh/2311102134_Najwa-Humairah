@@ -38,6 +38,7 @@ Prinsip dalam Binary Seacrh secara langkahnya yaitu :
 
 - Interpolation Seacrh<br/>
 Proses pencarian interpolasi adalah evolusi dari pencarian biner. Keduanya memiliki persamaan untuk mencari nilai pada data yang telah terurut, tetapi cara kerjanya berbeda. Pencarian biner interpolasi mencari data dengan membagi array secara terus menerus, sementara pencarian interpolasi menggunakan formula, seperti yang ditunjukkan di bawah ini:
+
 ![Gambar_Interpolation_Search][Gambar_Interpolation_Search.png]
 
 Keterangan Variabel:<br/>
