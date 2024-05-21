@@ -36,6 +36,19 @@ Prinsip dalam Binary Seacrh secara langkahnya yaitu :
 4. Jika hasil lebih besar, maka dilakukan lagi tetapi posisi awal dianggap sama dengan posisi tengah + 1.
 5. Demikian seterusnya sampai data tengah sama dengan yang dicari. 
 
+- Interpolation Seacrh<br/>
+Proses pencarian interpolasi adalah evolusi dari pencarian biner. Keduanya memiliki persamaan untuk mencari nilai pada data yang telah terurut, tetapi cara kerjanya berbeda. Pencarian biner interpolasi mencari data dengan membagi array secara terus menerus, sementara pencarian interpolasi menggunakan formula, seperti yang ditunjukkan di bawah ini:
+![Gambar_Interpolation_Search][Gambar_Interpolation_Search.png]
+
+Keterangan Variabel:<br/>
+    - pos : variabel yang digunakan untuk menampung indeks atau posisi dimana program akan mencari data.<br/>
+    - key : variabel yang berisi data atau nilai yang dicari.<br/>
+    - data : array yang menyimpan banyak nilai dengan tipe yang sama sekaligus.<br/>
+    - low : variabel yang menampung indeks paling awal pada array (indeks 0).<br/>
+    - high : variabel yang menampung indeks terakhir dari array (indeks n-1).<br/>
+    - data[low] : nilai pada indeks low.
+    - data[high] : nilai pada indeks high 
+
 ## Guided
 
 ### 1. [Buatlah sebuah project dengan menggunakan sequential search sederhana untuk melakukan pencarian data.]
