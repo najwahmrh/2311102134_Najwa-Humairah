@@ -361,5 +361,5 @@ Sequential search atau pencarian linier adalah metode pencarian yang sederhana d
 ## Referensi
 [1] Satya Informatika. Penerapan Algoritma Pencarian Sequential Pada Aplikasi Kamus Tiga Bahasa Indonesia-Jawa-Banten. 2019.<br/>
 [2] Maulana, Ridwan . ALGORITMA PENCARIAN (SEQUENTIAL DAN BINARY SEARCH). 2022.<br/>
-[3] Burhanudin, Faisal. “SEARCHING ALGORITHM.” Www.academia.edu.<br/>
+[3] Burhanudin, Faisal. “SEARCHING ALGORITHM.”<br/>
 [4] Elektronika, Jurnal, and Dan Komputer. Implementasi Algoritma Sequential Searching Pada Sistem Penyedia Informasi Magang Berbayar. Vol. 16, no. 1, 2023, pp. 148–155.<br/>
