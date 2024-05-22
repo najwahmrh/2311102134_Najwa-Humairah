@@ -27,7 +27,7 @@ Program di atas
 
 ## Unguided 
 
-### 1. []
+### 1. [Buatlah program graph dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya.]
 
 ```C++
 // Najwa Humairah
@@ -40,7 +40,7 @@ Program di atas
 
 Dalam program diatas, yaitu
 
-### 2. []
+### 2. [Modifikasi guided tree diatas dengan program menu menggunakan input data tree dari user dan berikan fungsi tambahan untuk menampilkan node child dan descendant dari node yang diinput kan!]
 
 ```C++
 // Najwa Humairah
