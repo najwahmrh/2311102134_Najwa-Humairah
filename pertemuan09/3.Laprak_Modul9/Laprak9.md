@@ -14,9 +14,10 @@ Suatu Graf mengandung 2 himpunan, yaitu:<br/>
 Graf seperti diatas ditulis sebagai G(E,V). Banyaknya simpul (vertex) disebut order, sedangkan banyaknya ruas (edge) disebut size dari graf.
 
 Contoh:
+
 ![contoh_graf](contoh_graf.png)
 
-##### JENIS-JENIS GRAF
+#### JENIS-JENIS GRAF
 1. Graf Berarah(Directed Graph/Digraph)<br/>
 Graf berarah adalah graf yang dapat menghubungkan V1 dan V2 saja. Maksimum jumlah busur dari n simpul adalah : n(n-1)
 
@@ -53,13 +54,13 @@ struct Simpul {
 };
 ```
 
-##### ISTILAH DALAM TREE
+#### ISTILAH DALAM TREE
 ![istilah_dalam_tree](istilah_dalam_tree.png)
 
-##### ILUSTRASI ALGORITMA TREE
+#### ILUSTRASI ALGORITMA TREE
 ![ilustrasi_tree](ilustrasi_tree.png)
 
-##### JENIS JENIS TREE
+#### JENIS JENIS TREE
 1. Binary Tree<br/>
 Tree dengan syarat bahwa tiap node hanya boleh memiliki maksimal dua sub. pohon dan kedua subpohon harus terpisah.
 
@@ -1083,14 +1084,35 @@ int main(){
 ```
 
 #### Output:
-![Screenshot output](screenshot_unguided2.png)
+![Screenshot output](screenshot_unguided2_1.png)
+![Screenshot output](screenshot_unguided2_2.png)
+![Screenshot output](screenshot_unguided2_3.png)
+![Screenshot output](screenshot_unguided2_4.png)
+![Screenshot output](screenshot_unguided2_5.png)
+![Screenshot output](screenshot_unguided2_6.png)
+![Screenshot output](screenshot_unguided2_7.png)
+![Screenshot output](screenshot_unguided2_8.png)
+![Screenshot output](screenshot_unguided2_9.png)
+![Screenshot output](screenshot_unguided2_10.png)
+![Screenshot output](screenshot_unguided2_11.png)
+![Screenshot output](screenshot_unguided2_12.png)
+![Screenshot output](screenshot_unguided2_13.png)
+![Screenshot output](screenshot_unguided2_14.png)
+![Screenshot output](screenshot_unguided2_15.png)
+![Screenshot output](screenshot_unguided2_16.png)
+![Screenshot output](screenshot_unguided2_17.png)
+![Screenshot output](screenshot_unguided2_18.png)
+![Screenshot output](screenshot_unguided2_19.png)
+![Screenshot output](screenshot_unguided2_20.png)
 
 Dalam program diatas yaitu mengimplementasikan dari struktur data ttree dalam bahasa c++. Pengguna dapat membuat, mengubah, dan mengawasi pohon dengan program ini. Tree ini menggunakan representasi node dengan struktur data Pohon, yang memiliki data karakter (char) dan pointer ke node anak kiri, node anak kanan, dan node parent. Program dimulai dengan mendeklarasikan struktur data dan pointer untuk pohon, dan kemudian melakukan beberapa fungsi utilitas, seperti inisialisasi, mengecek apakah pohon kosong, dan membuat node baru.
 
 Setelah program dimulai, sebuah menu muncul yang memungkinkan Anda melakukan berbagai operasi pada pohon. Pilihan ini termasuk menambah node root, menambah node anak kiri atau anak kanan, mengubah data node, melihat atau mengambil data node, mencari data node, melintasi pohon (PreOrder, InOrder, dan PostOrder), menghapus cabang, menghapus seluruh pohon, menampilkan karakteristik pohon (ukuran dan tinggi), dan menampilkan anak dan keturunan node. Setiap pilihan menu digunakan dalam bentuk fungsi yang berkaitan dengan operasi yang sedang dilakukan. Misalnya, ketika Anda ingin menambahkan node anak kiri atau anak kanan, program akan mencari node induk dan kemudian menambahkan node baru sebagai anak kiri atau anak kanan dari node induk. Dengan cara yang sama, tindakan tambahan seperti penghapusan subtree, traversal, dan update data dilakukan dengan menggunakan pendekatan rekursif atau iteratif sesuai dengan kebutuhan. Pengguna dapat memilih operasi yang diinginkan dari menu dan program akan mengeksekusi operasi tersebut sesuai dengan input pengguna. 
+
 ## Kesimpulan
+Dalam teori graf dan struktur data, pohon dan graf sangat penting, dan mereka memiliki banyak aplikasi dalam ilmu komputer. Graf adalah representasi grafis yang terdiri dari sekumpulan objek dengan simpul (vertex) dan hubungan antar objek dengan rusuk (edge). Graf dibagi menjadi graf sederhana, yang tidak memiliki gelang atau sisi ganda, dan graf tak sederhana, yang dapat memiliki gelang atau sisi ganda. Selain itu, graf dibagi menjadi graf berarah, di mana urutan pasangan simpul diperhatikan dan diberi orientasi arah, dan graf tak berarah, di mana urutan pasangan simpul diperhatikan dan diberi orientasi arah.
 
-
+Pohon(Tree) adalah jenis graf yang terhubung tanpa sirkuit yang menunjukkan hubungan hierarkis antar elemen. Full binary tree memiliki satu akar dan dua anak di setiap nodenya; full binary tree, yang mirip dengan full binary tree tetapi memungkinkan sub-pohon memiliki jalur yang berbeda kecuali daun; dan skewed binary tree, di mana semua nodenya kecuali daun memiliki satu anak. Pohon memiliki kemampuan untuk melakukan berbagai operasi, seperti membentuk, mengosongkan, memeriksa kekosongan, memasukkan node, mencari elemen, mengubah isi node, mengetahui isi node, menghapus subtanaman, mengetahui karakteristik pohon, dan mengunjungi seluruh node dengan menggunakan metode traversal seperti Pre-Order, In-Order, dan Post-Order. Kedua struktur ini sangat penting untuk mengelola dan mengubah data dalam berbagai aplikasi komputer.
 ## Referensi
 [1] Ratih.  TREE DAN GRAPH. 2019.<br/>
 [2] M.Kom, Nur Hidayati. MODUL STRUKTUR DATA.<br/>
